@@ -1,0 +1,40 @@
+.toggle-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.toggle-button:focus {
+    outline: none;
+}
+
+.toggle-button__line {
+    font-size: 50px;
+    transform: rotateZ(0deg) scale(0);
+    transition: transform .3s ease-in-out;
+    position: fixed;
+    /* max-height: 1px;
+    margin-top: -1px; */
+}
+
+.toggle-button__line :hover,
+.toggle-button__line :active{
+    color: #808080;
+}
+
+
+.toggle-button__line.on {
+    transform: rotateZ(360deg) scale(1);
+    /* max-height: 100%;
+    margin-top: 0; */
+    transition: transform .5s ease-in-out;
+}
+
